@@ -607,7 +607,7 @@ ul {
 
 .form-emeil {
   display: flex;
-  }
+}
 
 .form-emeil input {
   width: 358px;
@@ -795,7 +795,7 @@ ul {
 
 .backdrop {
   position: fixed;
- 
+
   top: 0;
   left: 0;
   width: 100%;
@@ -816,8 +816,7 @@ ul {
   position: absolute;
   display: flex;
   flex-direction: column;
-
-  justify-content: end;
+  
   width: 528px;
   height: 581px;
   top: 50%;
@@ -834,6 +833,8 @@ ul {
 
 .close-button {
   position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -847,8 +848,22 @@ ul {
   cursor: pointer;
 }
 
+.close-button:hover {
+  fill: var(--accent-color);
+}
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%);
+}
+
+.form-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23.44/20);
+  text-align: center;
+    margin-top: 40px;
 }
 
 /*modal form*/
@@ -856,35 +871,48 @@ ul {
 .modal-form {
   display: flex;
   flex-direction: column;
-  width: 448px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ 
 }
 
 .label-modal {
-display: block;
-font-weight: 400;
+  display: block;
+  font-weight: 400;
   font-size: 12px;
-  line-height: calc(14.06/12);
+  line-height: calc(14.06 / 12);
   color: var(--primary-text-color);
   margin-bottom: 4px;
 }
 
 .form-control {
-position: relative;
-
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input {
-width: 100%;
-padding: 14px 14px 14px 28px;
-border: 1px solid var(--border-color-form);
-border-radius: 4px;
+  width: 448px;
+  padding: 14px 14px 14px 32px;
+  border: 1px solid var(--border-color-form);
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: var(--accent-color);
 }
 
 .form-modal-icon {
   position: absolute;
+  left: 12px;
   top: 50%;
   transform: translate(-50%);
-  padding-left: 13px;
+  fill: currentColor;
+}
+
+.form-control:focus-within .form-modal-icon {
+  fill: var(--accent-color);
 }
 
 .comment-modal {
@@ -893,4 +921,41 @@ border-radius: 4px;
   padding: 12px 16px;
   border: 1px solid var(--border-color-form);
   border-radius: 4px;
+  outline: none;
+}
+
+/*checkbox*/
+
+.checkbox-section {
+  position: relative;
+  display: flex;
+  margin-left: 54px;
+}
+
+.checkbox-label {
+  position: absolute;
+  left: 54px;
+}
+
+.checkbox-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.checkbox-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--title-text-color);
+  opacity: 0;
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  opacity: 1;
+}
+
+.form-button {
+ 
+  display: flex;
 }
