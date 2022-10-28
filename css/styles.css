@@ -821,7 +821,7 @@ ul {
   height: 581px;
   top: 50%;
   left: 50%;
-  padding: 8px;
+  padding: 40px;
   border-radius: 4px;
   transform: translate(-50%, -50%);
   background-color: var(--primary-background-color);
@@ -863,7 +863,6 @@ ul {
   font-size: 20px;
   line-height: calc(23.44/20);
   text-align: center;
-    margin-top: 40px;
 }
 
 /*modal form*/
@@ -908,7 +907,7 @@ ul {
   left: 12px;
   top: 50%;
   transform: translate(-50%);
-  fill: currentColor;
+  fill: var(--title-text-color);
 }
 
 .form-control:focus-within .form-modal-icon {
@@ -922,6 +921,10 @@ ul {
   border: 1px solid var(--border-color-form);
   border-radius: 4px;
   outline: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14.06 / 12);
+  color: var(--primary-text-color);
 }
 
 /*checkbox*/
