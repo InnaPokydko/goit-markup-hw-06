@@ -602,11 +602,11 @@ ul {
 }
 
 .form-box {
-display: flex;
-margin-right: 215px;
-margin-top: 20px;
-align-items: baseline;
-gap: 12px;
+  display: flex;
+  margin-right: 215px;
+  margin-top: 20px;
+  align-items: baseline;
+  gap: 12px;
 }
 
 .form-footer-input {
@@ -624,8 +624,8 @@ gap: 12px;
 
   font-weight: 400;
   font-size: 16px;
-  line-height: calc(20/16);
-    letter-spacing: 0.03em;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
 }
 
 .button-footer {
@@ -641,11 +641,11 @@ gap: 12px;
 
   background-color: var(--accent-color);
   color: var(--primary-background-color);
-  box-shadow: 0px 4px 4px (0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: calc(30/16);
   text-align: center;
   letter-spacing: 0.06em;
 
@@ -915,7 +915,7 @@ gap: 12px;
   justify-content: center;
   align-items: center;
   width: 100%;
-  }
+}
 
 .label-modal {
   display: block;
@@ -987,7 +987,7 @@ gap: 12px;
   top: 50%;
   left: 0;
   transform: translate(-50%);
-    border: 1px solid var(--title-text-color);
+  border: 1px solid var(--title-text-color);
   border-radius: 2px;
   fill: none;
 }
@@ -1009,8 +1009,6 @@ gap: 12px;
   -moz-appearance: none;
 }
 
-
-
 .checkbox-input:checked + .checkbox-icon {
   border: none;
   background-color: var(--accent-color);
@@ -1027,7 +1025,7 @@ gap: 12px;
 
   background-color: var(--accent-color);
   color: var(--primary-background-color);
-  box-shadow: 0px 4px 4px (0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-weight: 700;
   font-size: 16px;
