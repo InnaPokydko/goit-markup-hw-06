@@ -601,11 +601,15 @@ ul {
   margin-top: 20px;
 }
 
-.form-footer {
-  display: flex;
+.form-box {
+display: flex;
+margin-right: 215px;
+margin-top: 20px;
+align-items: baseline;
+gap: 12px;
 }
 
-.form-emeil input {
+.form-footer-input {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -615,11 +619,22 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.form-footer-input:placeholder-shown {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20/16);
+    letter-spacing: 0.03em;
+}
+
 .button-footer {
   display: flex;
+  gap: 10px;
   border: 1px solid transparent;
   border-radius: 4px;
-  padding: 10px 62px 10px 28px;
+  padding-top: 10px;
+  padding-left: 28px;
   width: 200px;
   height: 50px;
   margin: 0 auto;
@@ -635,6 +650,15 @@ ul {
   letter-spacing: 0.06em;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--button-background-color);
+}
+
+.footer-telegr-icon {
+  fill: currentColor;
 }
 
 /*portfolio.html*/
