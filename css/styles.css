@@ -540,7 +540,7 @@ ul {
 .footer-flex {
   display: flex;
   justify-content: space-between;
-    align-items: baseline;
+  align-items: baseline;
 }
 
 .lists {
@@ -868,7 +868,7 @@ ul {
   position: absolute;
   display: flex;
   flex-direction: column;
-  
+
   width: 528px;
   height: 581px;
   top: 50%;
@@ -941,9 +941,17 @@ ul {
 
 .form-control {
   position: relative;
-  
+
   margin-bottom: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--title-text-color);
 }
 
 .checkbox-icon {
@@ -954,7 +962,7 @@ ul {
   border: 1px solid var(--title-text-color);
   border-radius: 2px;
   fill: none;
-} 
+}
 
 .form-input {
   display: block;
@@ -967,14 +975,6 @@ ul {
 
 .form-input:focus {
   border-color: var(--accent-color);
-}
-
-.form-modal-icon {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translate(-50%);
-  fill: var(--title-text-color);
 }
 
 .form-control:focus-within .form-modal-icon {
@@ -993,64 +993,68 @@ ul {
   line-height: calc(14.06 / 12);
   color: var(--primary-text-color);
   margin-bottom: 0;
-  }
+}
 
 /*checkbox*/
 
 .checkbox-input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
+  outline: none;
 }
 .checkbox-label {
   color: var(--primary-text-color);
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
-  line-height: calc(24/14);
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   cursor: pointer;
 }
 .checkbox-conditions {
-    color: var(--accent-color);
+  color: var(--accent-color);
+  margin-left: 5px;
 }
 .checkbox-section {
   position: relative;
   margin-top: 16px;
   margin-bottom: 30px;
 }
+
 .checkbox-label {
   padding-left: 36px;
 }
 .checkbox-icon {
   content: "";
   position: absolute;
-    fill: var(--primary-background-color);
-   top: 50%;
+
+  fill: var(--primary-background-color);
+  top: 50%;
   left: 8px;
   transform: translateY(-50%);
   width: 16px;
   height: 15px;
+  padding: 2px;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
-  
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-input:checked ~ .checkbox-icon {
-  
-  border-color: var(--accent-color);
   background-color: var(--accent-color);
   border: none;
   fill: var(--primary-background-color);
 }
 
 .form-button {
-   display: inline-block;
-   justify-content: center;
+  display: inline-block;
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 10px 52px;
   width: 200px;
   height: 50px;
-  margin: 0 auto;
+  margin-left: 125px;
 
   background-color: var(--accent-color);
   color: var(--primary-background-color);
